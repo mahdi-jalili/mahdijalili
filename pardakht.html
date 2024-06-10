@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>صفحه پرداخت</title>
+    <style>
+        /* اینجا می‌توانید قالب‌بندی CSS را برای فرم پرداخت اعمال کنید */
+        .payment-form {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .payment-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        .payment-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>فرم پرداخت</h2>
+    <form class="payment-form">
+        <label for="card-number">شماره کارت:</label>
+        <input type="text" id="card-number" name="card-number" class="payment-input" required>
+
+        <label for="expiry-date">تاریخ انقضا:</label>
+        <input type="text" id="expiry-date" name="expiry-date" class="payment-input" required>
+
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv" class="payment-input" required>
+
+        <button type="submit" class="payment-button">پرداخت</button>
+    </form>
+</body>
+</html>

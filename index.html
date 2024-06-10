@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <script type="text/javascript" language="javascript">
+let totalPrice = 0;
+
+function addToCart(price) {
+    totalPrice += price;
+    alert("محصول به سبد خرید اضافه شد!");
+    updateTotalPrice();
+}
+
+function updateTotalPrice() {
+    document.getElementById("total-price").innerText = "قیمت نهایی: " + totalPrice + " تومان";
+}
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فروشگاه آنلاین</title>
+    <link rel="stylesheet" href="styles.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <header>
+        <h1>فروشگاه آنلاین</h1>
+        <nav>
+            <ul>
+                <li><a href="#">خانه</a></li>
+                <li><a href="#">محصولات</a></li>
+                <li><a href="#">سبد خرید</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="product">
+            <img src="22.jpg" alt="محصول 1">
+            <h2>  هدفون بلوتوثی ریمکس مدل ایرپاد پرو 2 2024 </h2>
+            <p>قیمت: 2500000 تومان</p>
+            <button class="buy-button" onclick="redirectToPayment()"> خرید</button>
+
+            <script>
+            function redirectToPayment() {
+            window.location.href="pardakht.html";
+            }
+            </script>
+            
+            
+        </div>
+        <div class="product">
+            <img src="23.jpg" alt="محصول 2">
+            <h2>
+                هندزفری بلوتوثی مدل Air Pods Pro V5.0 2024
+            </h2>
+            <p>قیمت: 660000 تومان</p>
+            <button class="buy-button" onclick="redirectToPayment()"> خرید</button>
+
+            <script>
+            function redirectToPayment() {
+            window.location.href="pardakht.html";
+            }
+            </script>
+        </div>
+        
+       
+
+    </main>
+    <footer>
+        &copy; 2024 فروشگاه آنلاین
+    </footer>
+
+</body>
+</html>
